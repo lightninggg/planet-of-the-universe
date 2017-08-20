@@ -1,0 +1,12 @@
+<ul>
+	{% for planet in site.pages %}
+		{% if planet.type == 'dawf' %}
+		
+		<li>
+			{{planet.title}}
+			<img src="{{site.baseurl}}/planets/img/{{planet.image}}" alt="dont worry">
+		</li>
+
+		{% endif %}
+	{% endfor %}
+</ul>

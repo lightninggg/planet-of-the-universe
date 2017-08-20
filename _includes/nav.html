@@ -1,7 +1,5 @@
 <nav>
-	<ul>
-		<li><a href="{{site.baseurl}}/" class = "current">Home</a></li>
-		<li><a href="{{site.baseurl}}/planet.html">planet</a></li>
-		<li><a href="{{site.baseurl}}/new.html">News</a></li>
-	</ul>
+	<a href="{{site.baseurl}}/" class = "{% if page.url == '/index.html'%}current{% endif %}">Home</a>
+	&nbsp;<a href="{{site.baseurl}}/planets" class="{% if page.url contains 'planets' %}current{% endif %}">Planet</a>
+	&nbsp;<a href="{{site.baseurl}}/news.html"class = "{% if page.url contains 'news' or page.url contains 'recently-discovered' %}current{% endif %}">News</a>
 </nav>
