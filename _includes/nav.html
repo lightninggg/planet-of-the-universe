@@ -1,5 +1,5 @@
 <nav>
 	<a href="{{site.baseurl}}/" class = "{% if page.url == '/index.html'%}current{% endif %}">Home</a>
-	&nbsp;<a href="planet-of-the-universe/planets" class="{% if page.url contains 'planets' %}current{% endif %}">Planet</a>
+	&nbsp;<a href="{{site.baseurl}}/planets" class="{% if page.url contains 'planets' %}current{% endif %}">Planet</a>
 	&nbsp;<a href="{{site.baseurl}}/news.html"class = "{% if page.url contains 'news' or page.url contains 'recently-discovered' %}current{% endif %}">News</a>
 </nav>
